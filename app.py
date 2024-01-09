@@ -37,7 +37,7 @@ if build_histogram:  # si la casilla de verificación está seleccionada
     st.plotly_chart(fig, use_container_width=True)
 
 
-elif build_scatter:  # si la casilla de verificación está seleccionada
+if build_scatter:  # si la casilla de verificación está seleccionada
     st.write('Construir un diagrama de dispersión para la columna odómetro')
     # Obtener todas las marcas únicas
     marcas_s_unicas = car_data['model'].unique()
