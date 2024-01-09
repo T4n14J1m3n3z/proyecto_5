@@ -21,7 +21,7 @@ if build_histogram:  # si la casilla de verificación está seleccionada
 
     # Casillas de verificación para seleccionar las marcas
     marcas_seleccionadas = st.multiselect(
-        'Selecciona los modelos:', marcas_unicas)
+        'Selecciona los modelos:', marcas_unicas, key='histogram_multiselect')
 
     # Filtrar el conjunto de datos según las marcas seleccionadas
     if 'Todas las marcas' in marcas_seleccionadas:
@@ -47,7 +47,7 @@ if build_scatter:  # si la casilla de verificación está seleccionada
 
     # Casillas de verificación para seleccionar las marcas
     marcas_seleccionadas_sc = st.multiselect(
-        'Selecciona los modelos:', marcas_s_unicas)
+        'Selecciona los modelos:', marcas_s_unicas, key='scatter_multiselect')
 
     # Filtrar el conjunto de datos según las marcas seleccionadas
     if 'Todas las marcas' in marcas_seleccionadas_sc:
